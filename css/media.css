@@ -2,6 +2,116 @@
   .container {
     max-width: 736px;
   }
+
+  /* heder */
+
+  .container-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-link,
+  .address-link {
+    display: block;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+
+    display: block;
+    margin-right: 76px;
+  }
+
+  .logo-studio {
+    color: #2e2f42;
+  }
+
+  .menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+
+    transition: color var(--tra);
+  }
+
+  .menu-link.emphasis::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    background-color: #404bbf;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    bottom: -1px;
+  }
+
+  .emphasis {
+    position: relative;
+    color: #404bbf;
+  }
+  .menu-item {
+    margin-right: 40px;
+  }
+
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: #404bbf;
+  }
+
+  .address-link {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    transition: color var(--tra);
+  }
+
+  .address {
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
   /* Hero */
 
   .hero {
@@ -127,6 +237,30 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  /* Heder */
+
+  .container-header {
+    padding: 0;
+  }
+
+  .address-list {
+    flex-direction: row;
+  }
+
+  .address-item {
+    margin-right: 40px;
+  }
+
+  .address-item:last-child {
+    margin-right: 0;
+  }
+
+  .menu-link,
+  .address-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   /* Hero */
 
