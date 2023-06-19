@@ -6,8 +6,8 @@
   /* heder */
 
   .container-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page-nav {
@@ -19,7 +19,12 @@
     display: flex;
   }
 
-  .menu-link,
+  .menu-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+  }
+
   .address-link {
     display: block;
   }
@@ -27,6 +32,7 @@
   .address-list {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .logo {
@@ -89,8 +95,8 @@
 
   .address-link {
     font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
@@ -226,6 +232,10 @@
     margin: 0;
   }
 
+  .studio {
+    color: #f4f4fd;
+  }
+
   /* Modal */
 
   .modal {
@@ -257,10 +267,11 @@
     margin-right: 0;
   }
 
-  .menu-link,
   .address-link {
     padding-top: 24px;
     padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
   }
   /* Hero */
 

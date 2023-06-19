@@ -158,15 +158,27 @@ body {
   transition: color var(--tra);
 }
 
+.active {
+  color: #404bbf;
+}
+
 .mob-address {
   font-style: normal;
   margin-bottom: 48px;
 }
+.mob-address-link {
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color var(--tra);
+}
 
 .tell {
+  display: inline-block;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 36px;
   line-height: 1.11;
+  color: #4d5ae5;
+  margin-bottom: 40px;
 
   text-transform: capitalize;
 }
@@ -175,12 +187,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-}
-
-.mob-address-link {
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color var(--tra);
 }
 
 .mob-address-link:hover,
